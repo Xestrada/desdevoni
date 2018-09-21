@@ -1,0 +1,24 @@
+.main {
+  background: url('./images/back.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;  
+  border: 6px solid transparent;
+  border-image: linear-gradient(to right, rgb(117, 79, 29) , rgb(247, 238, 179),rgb(117, 79, 29) );
+  border-image-slice: 1;
+  margin: 0 2% 0 2%;
+  padding: 18% 0 18% 0;
+}
+
+h1 {
+  width: 50%;
+  margin: auto;
+  text-align: center;
+}
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  font-family: sans-serif;
+  background-image: url('./images/marble.jpg');
+}
