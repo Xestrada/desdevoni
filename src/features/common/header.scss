@@ -1,5 +1,19 @@
 .logo {
     display: block;
     width: 10%;
-    margin: 0 10% 0 0;
+    margin: 0 1% 0 0;
+}
+
+.nav-bar{
+    width: 100%;
+    .navItem {
+        font-size: 1.2em;
+        padding-right: 2.5%;
+        .nav-link{
+            color: black;
+            &:hover{
+                color: gray;
+            }
+        }
+    }
 }
