@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import Header from '../common/header';
-import Home from './home';
 
 /*
   This is the root component of your app. Here you define the overall layout
@@ -12,7 +11,6 @@ export default class App extends Component {
     return (
       <div className="home-app">
         <Header />
-        <Home />
       </div>
     );
   }
