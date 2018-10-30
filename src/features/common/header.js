@@ -31,7 +31,7 @@ export default class Header extends React.Component{
       <div>
         <Navbar color="transparant" light expand="md">
           <img src={logo} alt="DesDevoni" className='logo' />
-          <NavbarToggler onClick={this.toggle} />
+          <NavbarToggler onClick={this.toggle} className = "mr-2"/>
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="m2-auto nav-bar" navbar>
               <NavItem className = "navItem">

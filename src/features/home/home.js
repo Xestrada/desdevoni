@@ -8,9 +8,6 @@ class Home extends Component {
       <div className = "home-root">
         <Header />
         <div className = "main">
-          <h1>
-            Des Devoni
-          </h1>
         </div>
       </div>
 

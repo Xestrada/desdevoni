@@ -1,14 +1,15 @@
+//Smallest is 327
 .logo {
     display: block;
-    width: 10%;
+    width: 22%;
     margin: 0 1% 0 0;
 }
 
 .nav-bar{
     width: 100%;
     .navItem {
-        font-size: 1.2em;
-        padding-right: 2.5%;
+        font-size: 0.9em;
+        line-height: 1em;
         .nav-link{
             color: black;
             &:hover{
@@ -16,4 +17,31 @@
             }
         }
     }
+}
+
+@media screen and (min-width: 768px) {
+    .logo {
+        width: 20%;
+    }
+    .nav-bar{
+        .navItem {
+            font-size: 1.2em;
+            margin-right: 1%;
+            .nav-link{
+                color: black;
+                &:hover{
+                    color: gray;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width: 1024px) {
+    .logo {
+        width: 10%;
+    }
+
+}
+@media screen and (min-width: 1080px) {
+    
 }
