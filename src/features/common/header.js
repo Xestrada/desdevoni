@@ -41,7 +41,7 @@ export default class Header extends React.Component{
                 <NavLink href="">Store</NavLink>
               </NavItem>
               <NavItem className = "navItem">
-                <NavLink href="/" className = "nav-link">Portfolio</NavLink>
+                <NavLink href="/portfolio" className = "nav-link">Portfolio</NavLink>
               </NavItem>
               <NavItem className = "navItem">
                 <NavLink href="about">About</NavLink>
