@@ -31,14 +31,17 @@ export default class Header extends React.Component{
       <div>
         <Navbar color="transparant" light expand="md">
           <img src={logo} alt="DesDevoni" className='logo' />
-          <NavbarToggler onClick={this.toggle} />
+          <NavbarToggler onClick={this.toggle} className = "mr-2"/>
           <Collapse isOpen={this.state.isOpen} navbar>
             <Nav className="m2-auto nav-bar" navbar>
               <NavItem className = "navItem">
                 <NavLink href="/" className = "nav-link">Home</NavLink>
               </NavItem>
               <NavItem className = "navItem">
-                <NavLink href="">New Items</NavLink>
+                <NavLink href="">Store</NavLink>
+              </NavItem>
+              <NavItem className = "navItem">
+                <NavLink href="/portfolio" className = "nav-link">Portfolio</NavLink>
               </NavItem>
               <NavItem className = "navItem">
                 <NavLink href="about">About</NavLink>
