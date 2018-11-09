@@ -3,10 +3,17 @@
     padding: 0 !important;
     font-family: sans-serif;
     background-image: url('../home/images/marble.jpg');
-}
-
-h1{
-    color: pink !important;
-
-
+    .about-box{
+        width: 88%;
+        margin: auto;
+        background-color: #ba8b8b;
+        opacity: .80;
+        p{ 
+            border: 6px solid transparent;
+            text-align: center;
+            width: 50%;
+            margin: auto;
+            font-style: oblique
+        }
+    }
 }
