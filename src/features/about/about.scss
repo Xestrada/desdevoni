@@ -1,7 +1,6 @@
 .about-root{
-    font-family: sans-serif;
     .about-box{
-        width: 88%;
+        width: 84%;
         margin: auto;
         background: rgba(186, 139, 139, 0.8);
         .img-box{
@@ -10,7 +9,7 @@
             padding: 2em 0 .5em 0;
             img{
                 border: 6px solid transparent;
-                border-image: linear-gradient(to right, rgb(117, 79, 29) , rgb(247, 238, 179),rgb(117, 79, 29) );
+                border-image: linear-gradient(to right, rgb(255, 255, 255) , rgb(255, 255, 255),rgb(255, 255, 255) );
                 border-image-slice: 1;
                 display: block;
                 width: 100%;
@@ -22,6 +21,7 @@
             text-align: center;
             width: 50%;
             margin: auto;
+            font-size: .96rem;
         }
     }
 }
