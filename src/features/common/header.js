@@ -6,9 +6,9 @@ import {
   Nav,
   NavItem,
   NavLink
-  } from 'reactstrap';
-  import logo from '../../images/logo.png';
-  import './header.scss';
+} from 'reactstrap';
+import logo from '../../images/logo.png';
+import './header.scss';
 
 
 export default class Header extends React.Component{

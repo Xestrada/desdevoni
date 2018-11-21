@@ -4,6 +4,7 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as actions from './redux/actions';
 import Header from "../common/header";
+import ImageBoard from '../common/imageBoard';
 import './portfolio.scss';
 
 export class DefaultPage extends Component {
@@ -16,6 +17,7 @@ export class DefaultPage extends Component {
     return (
       <div className="portfolio-default-page">
         <Header/>
+        <ImageBoard/>
       </div>
     );
   }
