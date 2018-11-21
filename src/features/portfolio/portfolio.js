@@ -6,6 +6,7 @@ import * as actions from './redux/actions';
 import Header from "../common/header";
 import ImageBoard from '../common/imageBoard';
 import './portfolio.scss';
+import logo from '../../images/logo.png';
 
 export class DefaultPage extends Component {
   static propTypes = {
@@ -17,7 +18,10 @@ export class DefaultPage extends Component {
     return (
       <div className="portfolio-default-page">
         <Header/>
-        <ImageBoard/>
+        <ImageBoard firstImage = {logo} secondImage = {logo} thirdImage = {logo} fourthImage = {logo} />
+        <ImageBoard firstImage = {logo} secondImage = {logo} thirdImage = {logo} fourthImage = {logo} />
+        <ImageBoard firstImage = {logo} secondImage = {logo} thirdImage = {logo} fourthImage = {logo} />
+        <ImageBoard firstImage = {logo} secondImage = {logo} thirdImage = {logo} fourthImage = {logo} />
       </div>
     );
   }
