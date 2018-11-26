@@ -5,11 +5,11 @@ import './imageBoard.scss';
 export default class ImageBoard extends React.Component{
 
     static propTypes = {
-        firstImage: PropTypes.object.isRequired,
-        secondImage: PropTypes.object.isRequired,
-        thirdImage: PropTypes.object.isRequired,
-        fourthImage: PropTypes.object.isRequired,
-        layout: PropTypes.object.isRequired
+        firstImage: PropTypes.string.isRequired,
+        secondImage: PropTypes.string.isRequired,
+        thirdImage: PropTypes.string.isRequired,
+        fourthImage: PropTypes.string.isRequired,
+        layout: PropTypes.string.isRequired
     };
 
   constructor(props) {

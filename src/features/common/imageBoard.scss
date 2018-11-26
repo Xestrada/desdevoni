@@ -1,6 +1,6 @@
 .board{
     width: 90%;
-    height: 15em;
+    height: 14em;
     background: rgba(186, 139, 139, 0.8);
     position: relative;
     margin: 1em auto 1em auto; 
@@ -10,33 +10,161 @@
         .imgOne{
             position: absolute;
             //Positionng
-            left: 3em;
-            bottom: 10em;
-            //Sizing
-            width: 8em;
+            left: 1em;
+            bottom: 7.5em;
+            width: 6.5em;
         }
         .imgTwo{
             position: absolute;
             //Positionng
-            bottom: 10em;
-            right: 3em;
-            //Sizing
-            width: 6em;
+            bottom: 7.5em;
+            right: 2em;
+            width: 7.5em;
         }
         .imgThree{
             position: absolute;
             //Positionng
             top: 8em;
-            //Sizing
-            width: 10em;
+            left: 1em;
+            width: 8.5em;
         }
         .imgFour{
             position: absolute;
             //Positionng
-            top: 10em;
+            top: 8em;
             right: 2em;
-            //Sizing
-            width: 6em;
+            width: 5.5em;
+        }
+    }
+}
+
+@media screen and (min-width: 360px) {
+    .board{
+        height: 15em;
+        .imgHolder{
+            .imgOne{
+                width: 7em;
+            }
+            .imgTwo{
+                width: 8em;
+            }
+            .imgThree{
+                width: 9em;
+            }
+            .imgFour{
+                width: 5.5em;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 375px) {
+    .board{
+        height: 15em;
+        .imgHolder{
+            .imgOne{
+                width: 8em;
+            }
+            .imgTwo{
+                width: 9em;
+            }
+            .imgThree{
+                width: 10em;
+            }
+            .imgFour{
+                width: 6.5em;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .board{
+        height: 25em;
+        margin: 1em 0 1em 1em; 
+        width: 75%;
+        .imgHolder{
+            .imgOne{
+                bottom: 12em;
+                left: 2em;
+                width: 14em;
+            }
+            .imgTwo{
+                bottom: 12em;
+                right: 4em;
+                width: 15em;
+            }
+            .imgThree{
+                top: 13.5em;
+                left: 2em;
+                width: 16em;
+            }
+            .imgFour{
+                top: 13.5em;
+                right: 4em;
+                width: 12.5em;
+            }
+        }
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    .board{
+        height: 30em;
+        margin: 1em 0 1em 1em; 
+        width: 75%;
+        .imgHolder{
+            .imgOne{
+                bottom: 14.5em;
+                left: 4em;
+                width: 16em;
+            }
+            .imgTwo{
+                bottom: 14.5em;
+                right: 6em;
+                width: 17em;
+            }
+            .imgThree{
+                top: 16em;
+                left: 4em;
+                width: 18em;
+            }
+            .imgFour{
+                top: 16em;
+                right: 6em;
+                width: 14.5em;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .board{
+        height: 30em;
+        margin: 1em 0 1em 1em; 
+        width: 45rem; //75% of 1080
+        .imgHolder{
+            .imgOne{
+                bottom: 14.5em;
+                left: 4em;
+                width: 16em;
+            }
+            .imgTwo{
+                bottom: 14.5em;
+                right: 6em;
+                width: 17em;
+            }
+            .imgThree{
+                top: 16em;
+                left: 4em;
+                width: 18em;
+            }
+            .imgFour{
+                top: 16em;
+                right: 6em;
+                width: 14.5em;
+            }
         }
     }
 }
