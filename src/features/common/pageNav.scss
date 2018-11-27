@@ -1,0 +1,10 @@
+.pageNav{
+    display: inline;
+}
+
+@media screen and (min-width: 768px) {
+    .pageNav{
+        display: none;
+    }
+    
+}

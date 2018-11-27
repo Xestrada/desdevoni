@@ -5,11 +5,12 @@ import { connect } from 'react-redux';
 import * as actions from './redux/actions';
 import Header from "../common/header";
 import ImageBoard from '../common/imageBoard';
-import './portfolio.scss';
+import PageNav from '../common/pageNav';
 import jack1 from '../../images/portfolio/jacket_3.jpg';
 import jack2 from '../../images/portfolio/jacket_1.jpg';
 import jack3 from '../../images/portfolio/jacket_2.jpg';
 import jack4 from '../../images/portfolio/jacket_4.jpg';
+import './portfolio.scss';
 
 export class DefaultPage extends Component {
   static propTypes = {
@@ -21,7 +22,10 @@ export class DefaultPage extends Component {
     return (
       <div className="portfolio-default-page">
         <Header/>
-        <ImageBoard firstImage = {jack1} secondImage = {jack2} thirdImage = {jack3} fourthImage = {jack4} />
+        <div className = '.gird-container'>
+          <ImageBoard firstImage = {jack1} secondImage = {jack2} thirdImage = {jack3} fourthImage = {jack4} />
+          <PageNav />
+        </div>
       </div>
     );
   }

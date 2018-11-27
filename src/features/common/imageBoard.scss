@@ -3,7 +3,7 @@
     height: 14em;
     background: rgba(186, 139, 139, 0.8);
     position: relative;
-    margin: 1em auto 1em auto; 
+    margin: 0 auto 0 auto; 
     .imgHolder{
         width: 100%;
         height: 100%;
@@ -81,7 +81,6 @@
 @media screen and (min-width: 768px) {
     .board{
         height: 25em;
-        margin: 1em 0 1em 1em; 
         width: 36rem;
         .imgHolder{
             .imgOne{
@@ -112,7 +111,6 @@
 @media screen and (min-width: 1024px) {
     .board{
         height: 30em;
-        margin: 1em 0 1em 1em; 
         width: 45rem;
         .imgHolder{
             .imgOne{
@@ -142,7 +140,6 @@
 @media screen and (min-width: 1080px) {
     .board{
         height: 30em;
-        margin: 1em 1em 1em 10.3rem; 
         width: 45rem; //75% of 1080
         .imgHolder{
             .imgOne{
