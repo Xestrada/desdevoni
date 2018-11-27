@@ -5,11 +5,7 @@ import './pageNav.scss';
 export default class PageNav extends React.Component {
 
     static propTypes = {
-        firstImage: PropTypes.string.isRequired,
-        secondImage: PropTypes.string.isRequired,
-        thirdImage: PropTypes.string.isRequired,
-        fourthImage: PropTypes.string.isRequired,
-        layout: PropTypes.string.isRequired
+        classStyle: PropTypes.string.isRequired
     };
 
   constructor(props) {
@@ -22,7 +18,7 @@ export default class PageNav extends React.Component {
 
   render() {
     return (
-      <div className = "pageNav">
+      <div className = {`pageNav ${this.props.classStyle}`}>
         <h5>Portfolio</h5>
         <a>Jacket</a>
         <a>Science Fiction</a>

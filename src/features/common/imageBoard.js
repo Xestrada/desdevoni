@@ -9,7 +9,7 @@ export default class ImageBoard extends React.Component{
         secondImage: PropTypes.string.isRequired,
         thirdImage: PropTypes.string.isRequired,
         fourthImage: PropTypes.string.isRequired,
-        layout: PropTypes.string.isRequired
+        classStyle: PropTypes.string.isRequired
     };
 
   constructor(props) {
@@ -22,7 +22,7 @@ export default class ImageBoard extends React.Component{
 
   render() {
     return (
-      <div className = "board">
+      <div className = {`board ${this.props.classStyle}`}>
         <div className = "imgHolder">
             <img src={this.props.firstImage} alt="first_image" className='imgOne' />
             <img src={this.props.secondImage} alt="second_image" className='imgTwo' />
