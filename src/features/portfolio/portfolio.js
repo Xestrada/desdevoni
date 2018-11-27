@@ -23,8 +23,8 @@ export class DefaultPage extends Component {
       <div className="portfolio-default-page">
         <Header/>
         <div className = 'grid-container'>
-          <ImageBoard firstImage = {jack1} secondImage = {jack2} thirdImage = {jack3} fourthImage = {jack4} classStyle = 'grid-2-4' />
-          <PageNav className = 'sideNav' classStyle = 'grid-4-5' />
+          <ImageBoard firstImage = {jack1} secondImage = {jack2} thirdImage = {jack3} fourthImage = {jack4} classStyle = 'mainBoard' />
+          <PageNav className = 'sideNav' classStyle = 'sideGrid' />
         </div>
       </div>
     );
