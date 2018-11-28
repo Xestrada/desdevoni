@@ -1,0 +1,16 @@
+.sideGrid{
+    grid-column: 2;
+    grid-template-rows: repeat(10, auto);
+}
+
+.pageNav{
+    display: none;
+    background-color: aqua;
+}
+
+@media screen and (min-width: 768px) {
+    .pageNav{
+        display: block;
+    }
+    
+}
