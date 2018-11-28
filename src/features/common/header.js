@@ -28,7 +28,7 @@ export default class Header extends React.Component{
 
   render() {
     return (
-      <div>
+      <div className = "navHolder">
         <Navbar color="transparant" light expand="md">
           <img src={logo} alt="DesDevoni" className='logo' />
           <NavbarToggler onClick={this.toggle} className = "mr-2"/>
