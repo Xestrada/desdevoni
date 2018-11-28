@@ -1,6 +1,14 @@
-.portfolio-default-page {
-        margin: 0 !important;
-        padding: 0 !important;
-        font-family: sans-serif;
-        background-image: url('../home/images/marble.jpg');
+
+
+@media screen and (min-width: 768px) {
+    .grid-container{
+        display: grid;
+        width: 90%;
+        max-width: 1080px;
+        grid-template-columns: 36rem 15rem;
+        grid-gap: 1em 10em;
+        margin: auto;
+        
+    }
+    
 }
