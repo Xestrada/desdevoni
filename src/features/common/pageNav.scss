@@ -1,5 +1,6 @@
 .sideGrid{
-    grid-area: side;
+    grid-column: 2;
+    grid-template-rows: repeat(10, auto);
 }
 
 .pageNav{

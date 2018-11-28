@@ -1,6 +1,15 @@
 .mainBoard{
-    grid-area: board;
+    grid-column: 1;
 }
+
+.row1{
+    grid-row: 1;
+}
+
+.row2{
+    grid-row: 2;
+}
+
 
 .board{
     width: 90%;

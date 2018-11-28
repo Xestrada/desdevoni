@@ -19,11 +19,15 @@ export class DefaultPage extends Component {
   };
 
   render() {
+    var styles = {
+        'grid-row': 2,
+    };
     return (
       <div className="portfolio-default-page">
         <Header/>
         <div className = 'grid-container'>
-          <ImageBoard firstImage = {jack1} secondImage = {jack2} thirdImage = {jack3} fourthImage = {jack4} classStyle = 'mainBoard' />
+          <ImageBoard firstImage = {jack1} secondImage = {jack2} thirdImage = {jack3} fourthImage = {jack4} classStyle = 'mainBoard row1'/>
+          {/* <ImageBoard firstImage = {jack1} secondImage = {jack2} thirdImage = {jack3} fourthImage = {jack4} classStyle = 'mainBoard row2'/> */}
           <PageNav className = 'sideNav' classStyle = 'sideGrid' />
         </div>
       </div>

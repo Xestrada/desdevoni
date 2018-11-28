@@ -5,8 +5,8 @@
         display: grid;
         width: 90%;
         max-width: 1080px;
-        grid-template-areas: 'board side';
-        grid-gap: 10px;
+        grid-template-columns: 36rem 15rem;
+        grid-gap: 1em 10em;
         margin: auto;
         
     }
