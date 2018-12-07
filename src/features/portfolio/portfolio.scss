@@ -11,6 +11,14 @@
         margin: auto;
         padding: 0;
         height: 100vh;
+
+        .imgCarousel{
+            display: none;
+        }
+
+        .active {
+            display: block;
+        }
     }
 }
 

@@ -35,37 +35,185 @@ import img25 from '../../images/portfolio/25.jpg';
 import img26 from '../../images/portfolio/26.jpg';
 import img27 from '../../images/portfolio/27.jpg';
 
-const set1 = [
+const festiveFall = [
   {
     src: img1,
-    alt: "img1"
+    alt: "img1",
   },
   {
     src: img2,
-    alt: "img2"
+    alt: "img2",
   },
   {
     src: img3,
-    alt: "img3"
+    alt: "img3",
   },
-]
+];
+
+const sequinDJ = [
+  {
+    src: img4,
+    alt: "img4",
+  }
+];
+
+const bratz = [
+  {
+    src: img5,
+    alt: "img5",
+  },
+  {
+    src: img6,
+    alt: "img6",
+  },
+  {
+    src: img7,
+    alt: "img7",
+  },
+  {
+    src: img8,
+    alt: "img8",
+  },
+  {
+    src: img9,
+    alt: "img9",
+  },
+  {
+    src: img10,
+    alt: "img10",
+  },
+  {
+    src: img11,
+    alt: "img11",
+  }
+];
+
+const remnant = [
+  {
+    src: img12,
+    alt: "img12",
+  }
+];
+
+const hades = [
+  {
+    src: img13,
+    alt: "img13",
+  },
+  {
+    src: img14,
+    alt: "img14",
+  },
+  {
+    src: img15,
+    alt: "img15",
+  },
+  {
+    src: img16,
+    alt: "img16",
+  },
+];
+
+const slow = [
+  {
+    src: img17,
+    alt: "img17",
+  }
+];
+
+const science = [
+  {
+    src: img18,
+    alt: "img18",
+  },
+  {
+    src: img19,
+    alt: "img19",
+  },
+  {
+    src: img20,
+    alt: "img20",
+  },
+];
+
+const leaf = [
+  {
+    src: img21,
+    alt: "img21",
+  }
+];
+
+const autumn = [
+  {
+    src: img22,
+    alt: "img22",
+  },
+  {
+    src: img23,
+    alt: "img23",
+  },
+  {
+    src: img24,
+    alt: "img24",
+  },
+  {
+    src: img25,
+    alt: "img25",
+  },
+  {
+    src: img26,
+    alt: "img26",
+  },
+  {
+    src: img27,
+    alt: "img27",
+  },
+];
+
 
 
 import './portfolio.scss';
 
 export class DefaultPage extends Component {
+
   static propTypes = {
     portfolio: PropTypes.object.isRequired,
     actions: PropTypes.object.isRequired,
   };
+
+  constructor(props) {
+    super(props);
+
+    this.state = { 
+      activeIndex: 0
+    };
+
+    this.changeActive = this.changeActive.bind(this);
+    
+
+  }
+
+  changeActive(index) {
+    this.setState({
+      activeIndex: index
+    });
+  }
 
   render() {
     return (
       <div className="portfolio-default-page">
         <Header/>
         <div className = 'grid-container'>
-          <ImageBoard images = {set1} classStyle = 'mainBoard'/>
-          <PageNav classStyle = 'sideGrid' />
+          <ImageBoard images = {festiveFall} className = {`mainBoard imgCarousel ${this.state.activeIndex == 0 ? `active` : ``} `} />
+          <ImageBoard images = {sequinDJ} className = {`mainBoard imgCarousel ${this.state.activeIndex == 1 ? `active` : ``} `} />
+          <ImageBoard images = {bratz} className = {`mainBoard imgCarousel ${this.state.activeIndex == 2 ? `active` : ``} `}/>
+          <ImageBoard images = {remnant} className = {`mainBoard imgCarousel ${this.state.activeIndex == 3 ? `active` : ``} `} />
+          <ImageBoard images = {hades} className = {`mainBoard imgCarousel ${this.state.activeIndex == 4 ? `active` : ``} `} />
+          <ImageBoard images = {slow} className = {`mainBoard imgCarousel ${this.state.activeIndex == 5 ? `active` : ``} `} />
+          <ImageBoard images = {science} className = {`mainBoard imgCarousel ${this.state.activeIndex == 6 ? `active` : ``} `} />
+          <ImageBoard images = {leaf} className = {`mainBoard imgCarousel ${this.state.activeIndex == 7 ? `active` : ``} `} />
+          <ImageBoard images = {autumn} className = {`mainBoard imgCarousel ${this.state.activeIndex == 8 ? `active` : ``} `} />
+          <PageNav className = 'sideGrid' onClick = {this.changeActive} />
         </div>
       </div>
     );

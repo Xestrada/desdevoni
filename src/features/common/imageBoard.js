@@ -12,7 +12,8 @@ import './imageBoard.scss';
 export default class ImageBoard extends React.Component{
 
   static propTypes = {
-      images: PropTypes.object.isRequired
+      images: PropTypes.array.isRequired,
+      className: PropTypes.string.isRequired
   };
 
   constructor(props) {
@@ -69,13 +70,13 @@ export default class ImageBoard extends React.Component{
           className="imgTemp"
         >
           <img src={item.src} alt={item.altText} />
-          <CarouselCaption captionText={item.caption} captionHeader={item.caption} />
+          <CarouselCaption captionText={''} captionHeader={item.caption} />
         </CarouselItem>
       );
     });
 
     return (
-      <div className = {`board ${this.props.classStyle}`}>
+      <div className = {`board ${this.props.className}`}>
         <Carousel
           activeIndex={activeIndex}
           next={this.next}
