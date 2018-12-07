@@ -19,9 +19,7 @@ export default class ImageBoard extends React.Component{
   render() {
     return (
       <div className = {`board ${this.props.classStyle}`}>
-        <div className = "imgHolder">
-            <img src={this.props.image} alt="first_image" className = 'imgTemp'/>
-        </div>
+        <img src={this.props.image} alt="first_image" className = 'imgTemp'/>
       </div>
     );
   }

@@ -48,47 +48,9 @@ export class DefaultPage extends Component {
     return (
       <div className="portfolio-default-page">
         <Header/>
-        {/* <div className = 'grid-container'> */}
-        <div >
-          <h2>Festive Fall</h2>
-          <ImageBoard image = {img1} />
-          <ImageBoard image = {img2}/>
-          <ImageBoard image = {img3}/>
-          <h2>Sequin Drip Jacket</h2>
-          <ImageBoard image = {img4} />
-          <h2>Bratz Evening Wear</h2>
-          <ImageBoard image = {img5} />
-          <ImageBoard image = {img6} />
-          <ImageBoard image = {img7} />
-          <ImageBoard image = {img8} />
-          <ImageBoard image = {img9} />
-          <ImageBoard image = {img10} />
-          <ImageBoard image = {img11} />
-          <h2>Remnant Fabric Collection In Process</h2>
-          <ImageBoard image = {img12} />
-          <h2>Costume Designer: Hades and Persephone</h2>
-          <ImageBoard image = {img13} />
-          <ImageBoard image = {img14} />
-          <ImageBoard image = {img15} />
-          <ImageBoard image = {img16} />
-          <h2>Slow Fashion In Process</h2>
-          <ImageBoard image = {img17} />
-          <h2>Science Fiction Collection</h2>
-          <ImageBoard image = {img18} />
-          <ImageBoard image = {img19} />
-          <ImageBoard image = {img20} />
-          <h2>Leaf Block Print</h2>
-          <ImageBoard image = {img21} />
-          <h2>Des Automne</h2>
-          <ImageBoard image = {img22} />
-          <ImageBoard image = {img23} />
-          <ImageBoard image = {img24} />
-          <ImageBoard image = {img25} />
-          <ImageBoard image = {img26} />
-          <ImageBoard image = {img27} />
-
-          {/* <ImageBoard firstImage = {jack1} secondImage = {jack2} thirdImage = {jack3} fourthImage = {jack4} classStyle = 'mainBoard row2'/> */}
-          {/* <PageNav className = 'sideNav' classStyle = 'sideGrid' /> */}
+        <div className = 'grid-container'>
+          <ImageBoard image = {img1} classStyle = 'mainBoard'/>
+          <PageNav classStyle = 'sideGrid' />
         </div>
       </div>
     );

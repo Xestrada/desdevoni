@@ -20,9 +20,9 @@ export default class PageNav extends React.Component {
     return (
       <div className = {`pageNav ${this.props.classStyle}`}>
         <h5>Portfolio</h5>
-        <a>Jacket</a>
-        <a>Science Fiction</a>
-        <a>Reneissance</a>
+        <h6><a>Jacket</a></h6>
+        <h6><a>Science Fiction</a></h6>
+        <h6><a>Reneissance</a></h6>
       </div>
     );
   }

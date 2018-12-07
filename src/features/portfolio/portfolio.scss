@@ -3,12 +3,21 @@
 @media screen and (min-width: 768px) {
     .grid-container{
         display: grid;
-        width: 90%;
+        width: 95%;
         max-width: 1080px;
-        grid-template-columns: 36rem 15rem;
-        grid-gap: 1em 10em;
+        grid-template-columns: 2fr 0.5fr;
+        grid-template-rows: 1fr 4fr auto;
+        grid-gap: 0em 3em;
         margin: auto;
-        
+        padding: 0;
+        height: 100vh;
     }
-    
+}
+
+@media screen and (min-width: 1024px) {
+
+}
+
+@media screen and (min-width: 1080px) {
+
 }
