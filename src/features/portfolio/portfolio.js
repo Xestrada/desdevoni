@@ -35,6 +35,21 @@ import img25 from '../../images/portfolio/25.jpg';
 import img26 from '../../images/portfolio/26.jpg';
 import img27 from '../../images/portfolio/27.jpg';
 
+const set1 = [
+  {
+    src: img1,
+    alt: "img1"
+  },
+  {
+    src: img2,
+    alt: "img2"
+  },
+  {
+    src: img3,
+    alt: "img3"
+  },
+]
+
 
 import './portfolio.scss';
 
@@ -49,7 +64,7 @@ export class DefaultPage extends Component {
       <div className="portfolio-default-page">
         <Header/>
         <div className = 'grid-container'>
-          <ImageBoard image = {img1} classStyle = 'mainBoard'/>
+          <ImageBoard images = {set1} classStyle = 'mainBoard'/>
           <PageNav classStyle = 'sideGrid' />
         </div>
       </div>

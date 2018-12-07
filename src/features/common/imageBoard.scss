@@ -4,19 +4,22 @@
     justify-self: center;
 }
 
+.slides-box{
+    height: 100%;
+    .carousel-inner{
+        height: 100%;
+    }
+}
+
 .imgTemp{
-    display: block;
-    width: 40%;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
+    height: 100%;
+    img{
+        height: 100%;
+        display: block;
+        margin: 0 auto 0 auto;
 
-h2{
-    text-align: center;
+    }
 }
-
 
 .board{
     width: 90%;
