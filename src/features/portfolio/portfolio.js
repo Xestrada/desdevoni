@@ -2,11 +2,18 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import * as actions from './redux/actions';
 import Header from "../common/header";
 import ImageBoard from '../common/imageBoard';
 import PageNav from '../common/pageNav';
+import * as actions from './redux/actions';
+import { 
+  ButtonDropdown,
+  DropdownToggle,
+  DropdownMenu,
+  DropdownItem 
+} from 'reactstrap';
 
+// Images used in portfolio
 import img1 from '../../images/portfolio/1.jpg';
 import img2 from '../../images/portfolio/2.jpg';
 import img3 from '../../images/portfolio/3.jpg';
@@ -34,6 +41,18 @@ import img24 from '../../images/portfolio/24.jpg';
 import img25 from '../../images/portfolio/25.jpg';
 import img26 from '../../images/portfolio/26.jpg';
 import img27 from '../../images/portfolio/27.jpg';
+
+import { FESTIVE_FALL,
+  SEQUIN_DJ,
+  REMNANT,
+  BRATZ_EW,
+  HADES,
+  SLOW,
+  SCIENCE,
+  LEAF,
+  AUTUMN
+} from './portfolioConstants';
+import './portfolio.scss';
 
 const festiveFall = [
   {
@@ -170,10 +189,6 @@ const autumn = [
   },
 ];
 
-
-
-import './portfolio.scss';
-
 export class DefaultPage extends Component {
 
   static propTypes = {
@@ -185,10 +200,12 @@ export class DefaultPage extends Component {
     super(props);
 
     this.state = { 
-      activeIndex: 0
+      activeIndex: 0,
+      dropdownOpen: false
     };
 
     this.changeActive = this.changeActive.bind(this);
+    this.toggle = this.toggle.bind(this);
     
 
   }
@@ -199,7 +216,45 @@ export class DefaultPage extends Component {
     });
   }
 
+  toggle() {
+    this.setState({
+      dropdownOpen: !this.state.dropdownOpen
+    });
+  }
+
   render() {
+    let dropUpLabel;
+    
+    switch(this.state.activeIndex){
+      case 0:
+        dropUpLabel = FESTIVE_FALL;
+        break;
+      case 1:
+        dropUpLabel = SEQUIN_DJ;
+        break;
+      case 2:
+        dropUpLabel = BRATZ_EW;
+        break;
+      case 3:
+        dropUpLabel = REMNANT;
+        break;
+      case 4:
+        dropUpLabel = HADES;
+        break;
+      case 5:
+        dropUpLabel = SLOW;
+        break;
+      case 6:
+        dropUpLabel = SCIENCE;
+        break;
+      case 7:
+        dropUpLabel = LEAF;
+        break;
+      case 8:
+        dropUpLabel = AUTUMN;
+        break;
+    };
+
     return (
       <div className="portfolio-default-page">
         <Header/>
@@ -213,8 +268,27 @@ export class DefaultPage extends Component {
           <ImageBoard images = {science} className = {`mainBoard imgCarousel ${this.state.activeIndex == 6 ? `active` : ``} `} />
           <ImageBoard images = {leaf} className = {`mainBoard imgCarousel ${this.state.activeIndex == 7 ? `active` : ``} `} />
           <ImageBoard images = {autumn} className = {`mainBoard imgCarousel ${this.state.activeIndex == 8 ? `active` : ``} `} />
+          {/* PageNav is for desktop */}
           <PageNav className = 'sideGrid' onClick = {this.changeActive} />
         </div>
+        <div className = "mobilePageNav" >
+            <ButtonDropdown direction="up" isOpen={this.state.dropdownOpen} toggle={this.toggle} className = "mobileBtn">
+              <DropdownToggle caret color = "">
+                {dropUpLabel}
+              </DropdownToggle>
+              <DropdownMenu>
+                <DropdownItem>{FESTIVE_FALL}</DropdownItem>
+                <DropdownItem>{SEQUIN_DJ}</DropdownItem>
+                <DropdownItem>{BRATZ_EW}</DropdownItem>
+                <DropdownItem>{REMNANT}</DropdownItem>
+                <DropdownItem>{HADES}</DropdownItem>
+                <DropdownItem>{SLOW}</DropdownItem>
+                <DropdownItem>{SCIENCE}</DropdownItem>
+                <DropdownItem>{LEAF}</DropdownItem>
+                <DropdownItem>{AUTUMN}</DropdownItem>
+              </DropdownMenu>
+            </ButtonDropdown>
+          </div>
       </div>
     );
   }

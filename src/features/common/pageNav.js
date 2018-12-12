@@ -1,6 +1,17 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import '../portfolio/portfolioConstants';
 import './pageNav.scss';
+import { FESTIVE_FALL,
+  SEQUIN_DJ,
+  REMNANT,
+  BRATZ_EW,
+  HADES,
+  SLOW,
+  SCIENCE,
+  LEAF,
+  AUTUMN
+} from '../portfolio/portfolioConstants';
 
 export default class PageNav extends React.Component {
 
@@ -32,31 +43,31 @@ export default class PageNav extends React.Component {
       <div className = {`pageNav ${this.props.className}`}>
         <h4>Portfolio</h4>
         <h6 onClick = {() => this.selectClick(0)} className = {this.state.selected == 0 ? 'selected' : ''} >
-          Festive Fall
+          {FESTIVE_FALL}
         </h6>
         <h6 onClick = {() => this.selectClick(1)} className = {this.state.selected == 1 ? 'selected' : ''} >
-          Sequin Drip Jacket
+          {SEQUIN_DJ}
         </h6>
         <h6 onClick = {() => this.selectClick(2)} className = {this.state.selected == 2 ? 'selected' : ''} >
-          Bratz Evening Wear
+          {BRATZ_EW}
         </h6>
         <h6 onClick = {() => this.selectClick(3)} className = {this.state.selected == 3 ? 'selected' : ''} >
-          Remnant Fabric Collection In Process
+          {REMNANT}
         </h6>
         <h6 onClick = {() => this.selectClick(4)} className = {this.state.selected == 4 ? 'selected' : ''} >
-          Costume Designer: Hades and Persephone
+          {HADES}
         </h6>
         <h6 onClick = {() => this.selectClick(5)} className = {this.state.selected == 5 ? 'selected' : ''} >
-          Slow Fashion In Process
+          {SLOW}
         </h6>
         <h6 onClick = {() => this.selectClick(6)} className = {this.state.selected == 6 ? 'selected' : ''} > 
-          Science Fiction Collection
+          {SCIENCE}
         </h6>
         <h6 onClick = {() => this.selectClick(7)} className = {this.state.selected == 7 ? 'selected' : ''} >
-          Leaf Block Print
+          {LEAF}
         </h6>
         <h6 onClick = {() => this.selectClick(8)} className = {this.state.selected == 8 ? 'selected' : ''} >
-          Des Automne
+          {AUTUMN}
         </h6>
 
       </div>

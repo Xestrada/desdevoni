@@ -6,8 +6,29 @@
     display: block;
 }
 
+
+.mobilePageNav {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    .mobileBtn {
+        width: 100%;
+        button {
+            width: 100%;
+            color: white;
+            background-color: #B1797A;
+            border-color: #B1797A;
+        }
+        .dropdown-menu {
+            width: 100%;
+        }
+    }
+}
+
+
 @media screen and (min-width: 768px) {
-    .grid-container{
+    .grid-container {
         display: grid;
         width: 95%;
         max-width: 1080px;
@@ -17,6 +38,9 @@
         margin: auto;
         padding: 0;
         height: 100vh;
+    }
+    .mobilePageNav {
+        display: none;
     }
 }
 
