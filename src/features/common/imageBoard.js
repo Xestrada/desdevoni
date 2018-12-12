@@ -67,7 +67,7 @@ export default class ImageBoard extends React.Component{
           onExiting={this.onExiting}
           onExited={this.onExited}
           key={item.src}
-          className="imgTemp"
+          className="imgItem"
         >
           <img src={item.src} alt={item.altText} />
           <CarouselCaption captionText={''} captionHeader={item.caption} />

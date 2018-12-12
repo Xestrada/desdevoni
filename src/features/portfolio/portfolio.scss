@@ -1,4 +1,10 @@
+.imgCarousel{
+    display: none;
+}
 
+.active {
+    display: block;
+}
 
 @media screen and (min-width: 768px) {
     .grid-container{
@@ -11,14 +17,6 @@
         margin: auto;
         padding: 0;
         height: 100vh;
-
-        .imgCarousel{
-            display: none;
-        }
-
-        .active {
-            display: block;
-        }
     }
 }
 
