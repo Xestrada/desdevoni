@@ -27,6 +27,10 @@
             font-size: 0.8em;
         }
 
+        h6:hover {
+            cursor: pointer;
+        }
+
         .selected {
             font-style: italic;
             text-decoration: underline;
