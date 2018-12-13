@@ -277,15 +277,15 @@ export class DefaultPage extends Component {
                 {dropUpLabel}
               </DropdownToggle>
               <DropdownMenu>
-                <DropdownItem>{FESTIVE_FALL}</DropdownItem>
-                <DropdownItem>{SEQUIN_DJ}</DropdownItem>
-                <DropdownItem>{BRATZ_EW}</DropdownItem>
-                <DropdownItem>{REMNANT}</DropdownItem>
-                <DropdownItem>{HADES}</DropdownItem>
-                <DropdownItem>{SLOW}</DropdownItem>
-                <DropdownItem>{SCIENCE}</DropdownItem>
-                <DropdownItem>{LEAF}</DropdownItem>
-                <DropdownItem>{AUTUMN}</DropdownItem>
+                <DropdownItem onClick = {() => this.changeActive(0)} >{FESTIVE_FALL}</DropdownItem>
+                <DropdownItem onClick = {() => this.changeActive(1)} >{SEQUIN_DJ}</DropdownItem>
+                <DropdownItem onClick = {() => this.changeActive(2)} >{BRATZ_EW}</DropdownItem>
+                <DropdownItem onClick = {() => this.changeActive(3)} >{REMNANT}</DropdownItem>
+                <DropdownItem onClick = {() => this.changeActive(4)} >{HADES}</DropdownItem>
+                <DropdownItem onClick = {() => this.changeActive(5)} >{SLOW}</DropdownItem>
+                <DropdownItem onClick = {() => this.changeActive(6)} >{SCIENCE}</DropdownItem>
+                <DropdownItem onClick = {() => this.changeActive(7)} >{LEAF}</DropdownItem>
+                <DropdownItem onClick = {() => this.changeActive(8)} >{AUTUMN}</DropdownItem>
               </DropdownMenu>
             </ButtonDropdown>
           </div>
