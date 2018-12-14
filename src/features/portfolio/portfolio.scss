@@ -1,14 +1,60 @@
+.imgCarousel{
+    display: none;
+}
+
+.active {
+    display: block;
+}
+
+.grid-container {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+}
+
+.mobilePageNav {
+    display: block;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    .mobileBtn {
+        width: 100%;
+        button {
+            width: 100%;
+            color: white;
+            background-color: #B1797A;
+            border-color: #B1797A;
+        }
+        .dropdown-menu {
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+    }
+}
 
 
 @media screen and (min-width: 768px) {
-    .grid-container{
+    .grid-container {
         display: grid;
-        width: 90%;
+        width: 95%;
         max-width: 1080px;
-        grid-template-columns: 36rem 15rem;
-        grid-gap: 1em 10em;
+        grid-template-columns: 2fr 0.5fr;
+        grid-template-rows: 1fr 4fr auto;
+        grid-gap: 0em 3em;
         margin: auto;
-        
+        padding: 0;
+        height: 100vh;
     }
-    
+    .mobilePageNav {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+
+}
+
+@media screen and (min-width: 1080px) {
+
 }
