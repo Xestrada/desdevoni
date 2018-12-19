@@ -8,14 +8,15 @@
 
 .grid-container {
     width: 100%;
-    height: 80vh;
-    position: relative;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .mobilePageNav {
     display: block;
     width: 100%;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     .mobileBtn {
         width: 100%;
@@ -45,6 +46,9 @@
         margin: auto;
         padding: 0;
         height: 100vh;
+        position: static;
+        top: 0;
+        transform: translateY(0);
     }
     .mobilePageNav {
         display: none;
